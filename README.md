@@ -1,6 +1,6 @@
 <img src="https://github.com/kevinthomasbradley/cold-helium/blob/master/styles/logo.png" width="200"> 
 
-# Crypto Coin [cold-helium]
+# Helium Crypto Coin [cold-helium]
 
 ## Description
 
