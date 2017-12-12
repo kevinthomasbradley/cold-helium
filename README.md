@@ -4,7 +4,7 @@
 
 ## Description
 
-This repository will contain an implementation of a cryptocurrency.
+This repository will contain an implementation of a cryptocurrency based on the litecoin / bitcoin source.
 
 ## Documentation
 
