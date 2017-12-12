@@ -13,29 +13,29 @@ This repository will contain an implementation of a cryptocurrency based on the 
 * litecoin-0.8.7.4
 
 # Steps
-sudo apt-get update
-sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
-sudo apt-get install libboost-all-dev
-sudo add-apt-repository ppa:bitcoin/bitcoin
-sudo apt-get update
-sudo apt-get install libminiupnpc-dev 
+* sudo apt-get update
+* sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
+* sudo apt-get install libboost-all-dev
+* sudo add-apt-repository ppa:bitcoin/bitcoin
+* sudo apt-get update
+* sudo apt-get install libminiupnpc-dev 
 
-sudo apt-get install libdb4.8-dev
-sudo apt-get install libdb4.8++-dev
-sudo apt-get install libboost1.37-dev
+* sudo apt-get install libdb4.8-dev
+* sudo apt-get install libdb4.8++-dev
+* sudo apt-get install libboost1.37-dev
 (If using Boost 1.37, append -mt to the boost libraries in the makefile)
 
-mv litecoin-0.8.7.4 heliumcoin
-cd heliumcoin
+* mv litecoin-0.8.7.4 heliumcoin
+* cd heliumcoin
 
-find ./ -type f -readable -writable -exec sed -i "s/Litecoin/Heliumcoin/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/LiteCoin/HeliumCoin/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/LTC/HLC/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/litecoin/heliumcoin/g" {} \;
-find ./ -type f -readable -writable -exec sed -i "s/litecoind/heliumcoind/g" {} \;
+* find ./ -type f -readable -writable -exec sed -i "s/Litecoin/Heliumcoin/g" {} \;
+* find ./ -type f -readable -writable -exec sed -i "s/LiteCoin/HeliumCoin/g" {} \;
+* find ./ -type f -readable -writable -exec sed -i "s/LTC/HLC/g" {} \;
+* find ./ -type f -readable -writable -exec sed -i "s/litecoin/heliumcoin/g" {} \;
+* find ./ -type f -readable -writable -exec sed -i "s/litecoind/heliumcoind/g" {} \;
 
-cd src
-sudo nano main.cpp
+* cd src
+* sudo nano main.cpp
 
 1. empty the hashGenesisBlock in loadblockIndex function setting it to hashGenesisBlock = unint256("0x");
 2. change the pchMessageStart[0] = 0xf3;
