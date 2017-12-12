@@ -9,8 +9,8 @@ This repository will contain an implementation of a cryptocurrency based on the 
 ## Instructions
 
 # Platform
-ubuntu-14.04.5-desktop-amd64
-litecoin-0.8.7.4
+* ubuntu-14.04.5-desktop-amd64
+* litecoin-0.8.7.4
 
 # Steps
 sudo apt-get update
