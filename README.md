@@ -4,7 +4,7 @@
 
 ## Description
 
-This repository will contain an implementation of a cryptocurrency based on the litecoin / bitcoin source.
+This repository contains an implementation of a cryptocurrency based on the litecoin / bitcoin source. Simply put I took the source code from litecoin and amended to create my own cryptocurrency. I have no intention of releasing this for mining, it was simply an exercise to understand some of the inner workings of the code and how to reengineer for other currencies.
 
 ## Instructions
 
@@ -108,7 +108,15 @@ variable and set this with the merkleroot obtained in step 4. in the debug print
 17. create a config file at .heliumcoin/heliumcoin.conf file with the following settings rpcuser=heliumcoinrpc and rpcpassword=2fFfwFUwjiGV9684b17vk1B2Jpb9AxPZftZmNYkC8EQg
 18. at this point simply test all is as expected by running with ./heliumcoind -daemon and then ./heliumcoind getinfo to verify all is as expected
 
+### Useful commands
+* make -f makefile.unix USE_UPNP=-
+* ./heliumcoind -daemon
+* ./heliumcoind getinfo   // get block number is aligned with this
+* ./heliumcoind getaccountaddress
+* ./heliumcoind setgenerate
 
+-wallet=<file>	Specify wallet file (within data directory) (default: wallet.dat)  
+-testnet
 
 ## Documentation
 
