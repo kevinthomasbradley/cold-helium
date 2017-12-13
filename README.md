@@ -1,5 +1,4 @@
-<img src="https://github.com/kevinthomasbradley/cold-helium/blob/master/styles/logo1.png" width="200"> 
-<img src="https://github.com/kevinthomasbradley/cold-helium/blob/master/styles/logo2.png" width="200"> 
+<img src="https://github.com/kevinthomasbradley/cold-helium/blob/master/styles/logo1.png" width="150">
 
 # Helium Crypto Coin [cold-helium]
 
@@ -19,7 +18,7 @@ This repository will contain an implementation of a cryptocurrency based on the 
 3. sudo apt-get install libboost-all-dev
 4. sudo add-apt-repository ppa:bitcoin/bitcoin
 5. sudo apt-get update
-6. sudo apt-get install libminiupnpc-dev 
+6. sudo apt-get install libminiupnpc-dev
 
 7. sudo apt-get install libdb4.8-dev
 8. sudo apt-get install libdb4.8++-dev
