@@ -49,7 +49,9 @@ This repository will contain an implementation of a cryptocurrency based on the 
 27. ensure all hashGenesisBlock are wiped to 0x (should only be two places)
 28. change the block times by changing nTargetSpacing to 30 seconds and change the retarget aswell to 5 minutes by setting nTargetTimespan
 29. get rid of checkpoints for litecoin in the src/checkpoints.cpp file
-30. now modify the DNS seed list where the compiled initial wallet will exist by updating net.cpp strMainNetDNSSeed object to kevinthomasbradley.com and the IP address of my server
+30. now modify the DNS seed list where the compiled initial wallet will exist by updating net.cpp strMainNetDNSSeed object to kevinthomasbradley.com and the IP address of my server (to obtain)
+31. change the bitcoin-qt.pro to heliumcoin-qt.pro by cd .. then mv bitcoin-qt.pro heliumcoin-qt.pro
+32. make fresh merkleRoot in the main.cpp
 
 ## Documentation
 
