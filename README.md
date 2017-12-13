@@ -36,8 +36,8 @@ This repository will contain an implementation of a cryptocurrency based on the 
 5. find ./ -type f -readable -writable -exec sed -i "s/litecoind/heliumcoind/g" {} \;
 
 ### Genesis Block Clearing
-1. cd src
-2. sudo nano main.cpp
+1. cd src;
+2. sudo nano main.cpp;
 
 3. empty the hashGenesisBlock in loadblockIndex function setting it to hashGenesisBlock = unint256("0x");
 4. change the pchMessageStart[0] = 0xf3;
