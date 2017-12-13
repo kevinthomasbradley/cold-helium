@@ -38,18 +38,18 @@ This repository will contain an implementation of a cryptocurrency based on the 
 17. cd src
 18. sudo nano main.cpp
 
-1. empty the hashGenesisBlock in loadblockIndex function setting it to hashGenesisBlock = unint256("0x");
-2. change the pchMessageStart[0] = 0xf3;
-3. change the pchMessageStart[1] = 0xd2;
-4. change txNew.vout[0].scriptPubKey first four values to 2809
-5. update the pszTimestamp description to a relevant title for the day
-6. below the txNew.vout[0].scriptPubKey there are two block.nNonce value, set both to 0;
-7. set the epoc time to the current epoc time for instance 1513090749
-8. delete our merkleRoute by setting block.hasMerkleRoot == unint256("0x") as we will generate a new one based on the epoc time and the timestamp
-9. ensure all hashGenesisBlock are wiped to 0x (should only be two places)
-10. change the block times by changing nTargetSpacing to 30 seconds and change the retarget aswell to 5 minutes by setting nTargetTimespan
-11. get rid of checkpoints for litecoin in the src/checkpoints.cpp file
-12. now modify the seed list where the compiled wallet will exist
+19. empty the hashGenesisBlock in loadblockIndex function setting it to hashGenesisBlock = unint256("0x");
+20. change the pchMessageStart[0] = 0xf3;
+21. change the pchMessageStart[1] = 0xd2;
+22. change txNew.vout[0].scriptPubKey first four values to 2809
+23. update the pszTimestamp description to a relevant title for the day
+24. below the txNew.vout[0].scriptPubKey there are two block.nNonce value, set both to 0;
+25. set the epoc time to the current epoc time for instance 1513090749
+26. delete our merkleRoute by setting block.hasMerkleRoot == unint256("0x") as we will generate a new one based on the epoc time and the timestamp
+27. ensure all hashGenesisBlock are wiped to 0x (should only be two places)
+28. change the block times by changing nTargetSpacing to 30 seconds and change the retarget aswell to 5 minutes by setting nTargetTimespan
+29. get rid of checkpoints for litecoin in the src/checkpoints.cpp file
+30. now modify the DNS seed list where the compiled initial wallet will exist by updating net.cpp strMainNetDNSSeed object to kevinthomasbradley.com and the IP address of my server
 
 ## Documentation
 
