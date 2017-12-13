@@ -36,8 +36,8 @@ This repository will contain an implementation of a cryptocurrency based on the 
 5. find ./ -type f -readable -writable -exec sed -i "s/litecoind/heliumcoind/g" {} \;
 
 ### Genesis Block Clearing
-1. cd src;
-2. sudo nano main.cpp;
+1. cd src
+2. sudo nano main.cpp
 
 3. empty the hashGenesisBlock in loadblockIndex function setting it to hashGenesisBlock = unint256("0x");
 4. change the pchMessageStart[0] = 0xf3;
@@ -53,7 +53,7 @@ This repository will contain an implementation of a cryptocurrency based on the 
 15. now modify the DNS seed list where the compiled initial wallet will exist by updating net.cpp strMainNetDNSSeed object to kevinthomasbradley.com and the IP address of my server (to obtain)
 16. change the bitcoin-qt.pro to heliumcoin-qt.pro by cd .. then mv bitcoin-qt.pro heliumcoin-qt.pro
 17. make fresh merkleRoot in the main.cpp by adding the following code after assert(block.hashMerkleRoot == uint256("0x"))
-
+```
   // Code to create new MerkleRoot if not exists
   if (true && block.GetHash() != hashGenesisBlock)
   {
@@ -84,7 +84,7 @@ This repository will contain an implementation of a cryptocurrency based on the 
     printf("block.nNonce = %u \n", block.nNonce);
     printf("block.GetHash = %s\n", block.GetHash().ToString().c_str());
   }
-
+```
 18. Copy the folder to create a clean source folder before compiling to upload to github
 
 ### First Compilation
